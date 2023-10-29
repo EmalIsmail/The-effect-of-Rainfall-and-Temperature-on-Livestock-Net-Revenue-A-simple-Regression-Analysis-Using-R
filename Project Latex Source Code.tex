@@ -1,0 +1,233 @@
+\documentclass[12pt, a4]{article}
+\usepackage[utf8]{inputenc} 
+%\usepackage{subfigure}
+\usepackage[T1]{fontenc} 
+\usepackage{graphicx}
+\title{\begin{center}
+The effect of Rainfall and Temperature on Livestock Net Revenue: A simple Regression Analysis
+\end{center}}
+\author{
+\textbf{Emal Ismail}\\
+\vspace{3mm}
+Instructor: Asadullah Jawid\\
+\vspace{3mm}
+Division of Science, Technology, and Mathematics, \\
+American University of Afghanistan
+}
+\date{\today}
+\begin{document}
+\maketitle
+
+\newpage
+\tableofcontents
+
+\newpage
+% Sections of the Analysis
+
+
+\section{Summary}
+
+Based on the in-dept regression analysis of our dependent and independent variables in discussion section the results can be summarized in the following points. hence, in correlation co-efficient calculation of Livestock Net Income with Temperature as well as Rainfall show that Livestock Net Income has a negative relationship of -1.1 percent with Temperature and positive 2.38 percent correlation with Rainfall.
+Since,  positive correlation exists when one variable decreases as the other variable decreases, or one variable increases while the other increases. Therefore, we can conclude that if rainfall rate increases the Livestock Net Income will increase as well. Hence, if the the rainfall amount decreases the Livestock Net Income of farmers will decrease. 
+
+\vspace{0.6\baselineskip} % Whitespace before the editors
+
+Subsequently, since, inverse correlation or negative correlation describes the relationship between two variables which change in opposing directions. Based on that we can conclude that Increase in Temperature will force the Livestock Net Income to decrease and the other way around.
+
+Additionally, the aforementioned results in-dept analysis has been done in discussion and results section of this paper along with tables and visual representation of linear regression analysis as well as estimated equations.
+
+\section{Methodology}
+In this paper we are analyzing The effect of rainfall and temperature on Livestock Net Revenue. Furthermore, for in-dept analysis we have used regression to explain above-mentioned variables correlations and relationships or effects on each other. it is worth mentioning, that Regression analysis is a powerful statistical method that allow us to examine the relationship between two or more variables of interest. 
+
+\section{Results and discussion}
+
+In the primary stage of our regression analysis of variables Rainfall and Temperature along with their 	effect on Live Stock Net Income required us to preform data cleaning through calculation of descriptive statistic table of variables. which will lead to finding and removing outliers as well as null values inside our dataset records.
+\newpage
+
+\subsection{Descriptive Statistics}
+	%------------------------------------------------
+	%	Numerical variables table - 2
+	%------------------------------------------------
+\begin{table}[h]
+
+\caption{Descriptive Statistics of Numerical Variables}
+\label{tab:my-table}
+\begin{tabular}{ccccccc}
+\centering
+Variable                                                          & Mean     & Std.Dev   & Min    & Max    & Skew   & Kurt    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Livestock\\ Net\\ Income\end{tabular}  & 32871.58 & 26886.325 & -9400 & 77050 & 0.5272 & -0.4759 \\ \cline{1-1}
+Temperature                                                       & 10.95    & 2.764     & 7.027  & 17.392 & 0.2456 & -1.0627 \\ \cline{1-1}
+Rainfall                                                          & 34.5422  & 18.658    & 10.809 & 
+\\ \hline
+\end{tabular}
+
+\vspace{0.6\baselineskip} % Whitespace before the editors
+	%------------------------------------------------
+	%	Numerical dataset Explaination
+	%------------------------------------------------
+		
+As shown in Table 1 we have produced means, standard deviations, Minimums, Maximums, skewness and 	Kurtosis  for our variables of interest. These variables are consist  Livestock Net Income, Temperature and Rainfal. we can use this table to summarize data for the simple regression analysis of the above-mentioned variables for the bi-variate data analysis.
+
+\medskip
+
+Hence, in skewness and Kurtosis columns we can see that among three of the variables only Temperature seems to be slightly out of range for acceptable normal distribution of data.  Additionally, Livestock Net Income variable distributions is acceptable for normal distribution because the outliers in lower and upper fourth has been removed. The process of removing outliers for livestock income has clearly shown in Figures 1,2,3,4 through boxplots as well as histograms.
+
+\medskip
+
+subsequently, for the skewness of these three  variables rainfall, temperature and livestock net income as shown in the table 1 we can conclude that they are positively skewed where only distribution of Temperature seems to be approximately symmetric.
+
+
+% Note add illustration for skewness and kurtosis of other skewed variables.
+
+\end{table}
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%% Livestock net income outliers figures
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+	%------------------------------------------------
+	%	Boxplot for Livestock net income
+	%------------------------------------------------
+		
+
+\begin{figure}[h]
+  \begin{minipage}[t]{0.5\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{boxpot_outliers.png}
+    \caption{Livestock net income boxplot with outliers.}
+    \label{fig:chapter001_dist_001}
+  \end{minipage}
+  \hspace{0.5cm}
+  \begin{minipage}[t]{0.5\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{boxplot_no_outliers.png}
+    \caption{Livestock net income boxplot with outliers.}
+    \label{fig:chapter001_reward_001}
+  \end{minipage}
+  \vspace{0.75\baselineskip}
+  \end{figure}
+    %------------------------------------------------
+	%	Histograms for Livestock net income
+	%------------------------------------------------	
+\begin{figure}[h]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{hist_outliers.png}
+    \caption{Livestock net income histogram with outliers.}
+    \label{fig:chapter001_dist_001}
+  \end{minipage}
+  \hspace{0.5cm}
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{hist_No_outliers.png}
+    \caption{Livestock net income histogram with outliers.}
+    \label{fig:chapter001_reward_001}
+    \end{minipage}
+        
+    \end{figure}
+\newpage
+  
+    
+  As shown in Figure 1 and Figure 3 Livestock Net Income variable data actual range is
+between -181600 and 5754000 which is not a good representation of our
+sample because of huge outliers in Q1 and Q3. subsequently, Based on the
+skewness of Figure 1. as well as boxplot of Figure 3 which is equal to: 31.48262 we can conclude that the
+distribution seems to be highly skewed. Additionally, kurtosis of Livestock net income with outliers
+which is equal to: 1115.594 is greater or less than -1 and +1. Therefore,
+it's not considered to be acceptable in order to prove normal distribution.
+
+\vspace{0.75\baselineskip}
+
+subsequently, as shown in Figure 2 histogram and Figure 4 boxplot for better regression analysis we have
+removed the outliers of Livestock Net Income  variables through limiting the data between first and second quantile. The data greater or smaller the aforementioned range considered outliers or in simple words those data was not able to illustrate the average required data for the livestock
+net income of farmers and could cause anomalies in regression effect analysis of our variables. 
+    
+\vspace{0.5\baselineskip}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Bi-variate Regression Analysis}
+
+As we know that regression analysis is a group of statistical methods used for the estimation of relationships between a dependent variable and one or more independent variables. Where it can be used to assess the strength of the relationship between two or more variables as well as for modeling the future relationship between them. Hence, in our regression analysis we have two independent variables which are Rainfall and Temperature along with one dependent variable Livestock Net Income. 
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+ 
+
+ 
+\begin{table}[h]
+\centering
+\caption{Linear Relationship Measure of Livestock Net Income with Rainfall and Temperature.}
+\label{tab:my-table}
+\begin{tabular}{ccc}
+            & Covariance & Correlation \\ \hline
+Temperature & -4864.58   & -0.01108853 \\ \cline{1-1}
+Rainfall    & 70639.17   & 0.02385401  \\ \hline
+\end{tabular}
+\end{table}
+
+
+Table 2 illustrates correlation co-efficient of Livestock Net Income with Temperature as well as Rainfall. The Livestock Net Income based on the aforementioned table has negative relationship of -1.1 percent with Temperature and positive 2.38 percent correlation with Rainfall variable.
+
+\vspace{0.5\baselineskip}
+
+\begin{table}[h]
+\centering
+\caption{Linear Model Impact of Rainfall on Livestock Net Income }
+\label{tab:my-table}
+\begin{tabular}{ccccc}
+Rainfall    & Estimate & Std. Error & t value & Pr(\textgreater{}|t-) \\ \hline
+(Intercept) & 37023.4  & 8619.1     & 4.296   & 1.85e-05              \\ \cline{1-1}
+Rainfall    & 202.9    & 219.6      & 0.924   & 0.356                 \\ \hline
+\end{tabular}
+
+\[\large y=37023.4+202.9x\]
+Estimated equation of Rainfall's correlation with Livestock Net Income.
+\end{table}
+
+\begin{table}[h]
+\caption{Linear Model Impact of Temperature on Livestock Net Income }
+\centering
+\label{tab:my-table}
+\begin{tabular}{ccccc}
+Temperature & Estimate & Std. Error & t value & Pr(\textgreater{}|t-) \\ \hline
+(Intercept) & 51007.6  & 16750.5    & 3.045   & 0.00237               \\ \cline{1-1}
+Temperature & -636.7   & 1482.4     & -0.429  & 0.66763               \\ \hline
+\end{tabular}
+
+\[\large y=51007.6-636x\]
+Estimated equation of Temperature's correlation with Livestock Net Income.
+\end{table}
+
+\vspace{0.5\baselineskip}
+
+Based on the Linear relationship shown in Table 1 we can conclude that we have a positive relationship between Rainfall and Livestock Net Income. As we know  a Positive correlation is a relationship between two variables in which both variables move in the same direction. A positive correlation exists when one variable decreases as the other variable decreases, or one variable increases while the other increases.
+Therefore, we can conclude that if rainfall rate increases the Livestock Net Income will increase as well. Hence, if the the rainfall amount decreases the Livestock Net Income of farmers will decrease as well.
+
+\vspace{0.5\baselineskip}
+
+Subsequently, as shown in Table 2 we can see that Temperature and Livestock net income has a negative relationship which means that there is an inverse relationship between two variables - when one variable decreases, the other increases. The vice versa is a negative correlation too, in which one variable increases and the other decreases. These correlations are studied between Temperature and Livestock Income as a means of determining the relationship between these two variables. Therefore, we can conclude that when temperature increases the livestock net income will decrease and the other way around and for a balanced Livestock income the temperature must be balanced.
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=\linewidth]{temp.png}
+  \caption{Scatter plot of Temperature and Livestock Net Income along with linear model correlation line.}
+  \label{fig:boat1}
+  \end{figure}
+  
+  As shown in figure 5 as well as the estimated equation of temperature and livestock income we can conclude that we have a negative relationship of -1.1 percent between aforementioned variables. Negative correlation is sometimes described as Inverse correlation as well. An inverse correlation describes the relationship between two variables which change in opposing directions. For instance, if we put temperature degree equal to 52 centigrade the Livestock Net Income will decrease by 17899 AFN. Increase in Temperature will force the Livestock Net Income to decrease and vice versa.
+
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width=\linewidth]{Rainfall.png}
+  \caption{Scatter plot of Rainfall and Livestock Net Income along with linear model correlation line.}
+  \label{fig:boat1}
+\end{center}  
+
+\vspace{0.5\baselineskip}  
+  
+  As shown in figure 6 as well as the estimated equation of rainfall and livestock income we can conclude that we have a positive relationship of 2.38 percent between aforementioned variables. A positive correlation exists when one variable decreases as the other variable decreases, or one variable increases while the other increases. Positive correlation relationship between rainfall and livestock net income shows that both variables move in the same direction. For instance, if we put amount of rainfall to 10 mm   the Livestock Net Income will have an increase of 1796 AFN as well. Since, we have a positive relationship increase in amount of rainfall forced the Livestock net income to increase as well.
+\end{figure}
+
+
+
+\end{document}
+
